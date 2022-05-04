@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@/*": "./src/*.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
