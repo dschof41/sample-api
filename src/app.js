@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express'
 
 const app = express()
 
@@ -10,4 +10,4 @@ app.use(express.urlencoded({extended: true}))
 
 //routers
 
-module.exports = app
+export default app
