@@ -6,9 +6,6 @@ info:
 externalDocs:
   description: Read more about the api
   url: https://github.com/dschof41/sample-api/wiki
-servers:
-- url: https://petstore.swagger.io/v1
-- url: http://petstore.swagger.io/v1
 tags:
 - name: user
   description: Operations about user
@@ -45,6 +42,8 @@ paths:
         required: true
         schema:
           type: string
+          minLength: 4
+          maxLength: 8
       responses:
         200:
           description: successful operation

@@ -1,0 +1,2 @@
+GET http://localhost:3000/tester
+content-type: application/json

@@ -1,8 +1,12 @@
+import userRepository from '#src/user/repository'
 // business logic here
 
 const getUser = (userId) => {
     //get user data
-    return {userType: 'admin'}
+    console.log(`User Service: Starget getUser: ${userId}`)
+    const user = userRepository.getUser(userId)
+    console.log('User Service: End getUser')
+    return user
 }
 
 const addUser = (user) => {
@@ -13,3 +17,5 @@ const addUser = (user) => {
     console.log('Service: end process user')
     return
 }
+
+export default {getUser}
