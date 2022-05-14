@@ -9,6 +9,6 @@ app.use(express.urlencoded({extended: true}))
 // errors
 
 //routers
-app.use(userRouter)
+app.use('/user', userRouter)
 
 export default app

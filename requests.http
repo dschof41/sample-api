@@ -1,2 +1,12 @@
-GET http://localhost:3000/tester
+### Get User
+GET http://localhost:3000/user/tester
 content-type: application/json
+
+### Add User
+POST http://localhost:3000/user/add
+content-type: application/json
+
+{
+    "userId": "tester2",
+    "email": "tester2@t.com"
+}

@@ -3,19 +3,20 @@ import userRepository from '#src/user/repository'
 
 const getUser = (userId) => {
     //get user data
-    console.log(`User Service: Starget getUser: ${userId}`)
+    console.log(`User Service:getUser: start - ${userId}`)
     const user = userRepository.getUser(userId)
-    console.log('User Service: End getUser')
+    console.log(`User Service:getUser: start - ${userId}`)
     return user
 }
 
 const addUser = (user) => {
-    console.log('Service: start process user')
+    console.log('User Service:addUser: start')
     // add data
+    const response = userRepository.addUser(user)
     // publish event
     // notify user
-    console.log('Service: end process user')
-    return
+    console.log('User Service:addUser: end')
+    return response
 }
 
-export default {getUser}
+export default {getUser, addUser}

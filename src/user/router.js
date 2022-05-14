@@ -8,4 +8,6 @@ const userRouter = express.Router()
 
 userRouter.get('/:userId', userHandler.getUser)
 
+userRouter.post('/add', userHandler.addUser)
+
 export default userRouter
